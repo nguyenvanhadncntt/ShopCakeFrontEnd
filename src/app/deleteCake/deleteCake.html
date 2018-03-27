@@ -1,0 +1,46 @@
+<menu></menu>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div  class="main">
+		<h2>Delete Cake</h2>
+		<form>
+		<table style="width:50%">
+			<tr>
+			<th>
+			<label for="cCake">Code Cake</label>
+			</th>
+			<td>
+			<input type="text" id="cCake" name="cCake" value="{{cake.cCake}}" placeholder="Code Cake" readonly="true" #cCake/><br/>
+			</td>
+			</tr>
+			<tr>
+			<th><label for="nCake">Name Cake</label></th>
+			<td><input type="text" id="nCake" name="nCake"
+						placeholder="Name Cake" value="{{cake.nCake}}" readonly="true"/>
+			<td>
+			</tr>
+			<tr>
+			<th><label for="cCake">Price</label></th>
+			<td><input type="text" id="price" name="price" value="{{cake.price}}" readonly="true" placeholder="Price Cake" required /></td>
+			</tr>
+			<tr>
+			<th>
+			<label for="file">Image</label></th>
+			<td class="img_tb"><img
+					src="{{cake.image}}" /></td>
+			</tr>
+			<tr>
+			<th><label for="detail">Detail</label></th>
+			<td><textarea cols="30" rows="5" name="detail" value="{{cake.detail}}" id="detail" placeholder="input Detail....." class="textarea" readonly="true"></textarea>	</td>		
+			</tr>
+			<tr>
+			<td class="">
+			<input type="submit" value="Delete" class="button" (click)="deleteCake(cCake.value)"/></td></tr>
+		</table>
+		</form>
+	</div>

@@ -1,0 +1,15 @@
+<menu></menu>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="main">
+	<h2>Login</h2>
+	<form [formGroup]="myForm" (ngSubmit)="login(myForm.value)" >
+		<input type="text" formControlName="username" placeholder="Your Name" name="username" required/><br>
+		<input type="password" formControlName="password" placeholder="Your Password" name="password" required/><br>
+		<input type="submit" value="Login" class="button"/>
+	</form>
+	<p>{{thongBao}}</p>
+</div>

@@ -1,0 +1,116 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 278px;
+	height: 200px;
+	border: 2px solid black;
+}
+
+span {
+	color: red;
+}
+
+.search {
+	margin-left: 41%;
+}
+
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	padding: 8px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+table {
+	border-collapse: collapse;
+	width: 72%;
+	margin-top: 10px;
+}
+
+tr {
+	border: 1px solid #ddd;
+}
+
+li {
+	float: left;
+	list-style: none;
+}
+
+.main {
+	width: 50%;
+	height: 53%;
+	margin-left: 33%;
+	margin-top: 23px;
+}
+
+li>a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	display: block;
+	width: 68px;
+	height: 30px;
+	font-size: 20px;
+	padding: 16px 34px;
+	border: 1px solid black;
+}
+
+ul {
+	margin-left: 73%;
+}
+
+li>a:hover {
+	background-color: white;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	border-radius: 4px;
+	background-color: #0f75c5;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 20px;
+	width: 80px;
+	height: 48px;
+}
+
+.buy {
+	text-align: center;
+}
+
+.button:hover {
+	background: #2e2e2e
+}
+
+.mota {
+	margin-top: 10px;
+	margin-left: 28%;
+	padding: 0;
+	width: 46%;
+	height: 35%;
+}
+
+input {
+	padding: 12px 28px;
+	margin-bottom: 8px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}

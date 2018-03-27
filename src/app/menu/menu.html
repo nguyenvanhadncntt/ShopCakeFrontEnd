@@ -1,0 +1,11 @@
+<ul>
+<li class="home">
+        <a [routerLink]="['/home']">Home</a>
+ </li>
+ <li *ngIf="!login">
+<a [routerLink]="['/login']">Sign in</a>
+</li>
+ <li *ngIf="login">
+<a (click)="logout()">Sign out</a>
+</li>
+</ul>

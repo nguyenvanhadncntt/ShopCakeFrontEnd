@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	float: left;
+	list-style: none;
+}
+
+.main {
+	margin-left: 41%;
+}
+
+li>a {
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	margin-right: 5px;
+	margin-bottom: 2px;
+	display: block;
+	width: 68px;
+	height: 30px;
+	font-size: 20px;
+	padding: 16px 34px;
+	border: 1px solid black;
+}
+
+ul {
+	margin-left: 73%;
+}
+
+li>a:hover {
+	background-color: white;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+}

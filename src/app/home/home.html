@@ -1,0 +1,20 @@
+<menu></menu>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="main">
+	<form action="#" method="post">
+		<input type="text" placeholder="Search" name="nCake"/>
+		<input type="submit" value="Search" class="button"/>
+	</form>
+</div>
+<div>
+	<fieldset>
+    <legend>Các loại bánh bán chạy:</legend>
+	<div class="banchay">
+	<a *ngFor="let cake of cakes" [routerLink]="['/inforCake',cake.cCake]" ><img src="{{cake.image}}" alt="{{cake.nCake}}" title="{{cake.cCake}}"/></a>
+	</div>
+  </fieldset>
+</div>

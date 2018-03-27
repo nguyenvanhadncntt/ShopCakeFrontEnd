@@ -1,0 +1,28 @@
+<div class="search">
+	<form action="searchCakeAdmin">
+		<input type="text" placeholder="Search cake" name="nameCake" #nameCake/>
+		<input type="submit" value="Seach" class="button" (click)="search(nameCake.value)"/>
+	</form>
+	<a [routerLink]="['/insert']" class="btn">Insert Cake</a>
+</div>
+<div><menu></menu></div>
+	<table>
+		<tr>
+			<th>Code Cake</th>
+			<th>Name Cake</th>
+			<th>Price</th>
+			<th>Image</th>
+			<th>Details</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+		</tr>
+			<tr *ngFor="let cake of cakes">
+				<td>{{cake.cCake}}</td>
+				<td>{{cake.nCake}}</td>
+				<td>{{cake.price}}</td>
+				<td><img src="{{cake.image}}" /></td>
+				<td>{{cake.detail}}</td>
+				<td><a [routerLink]="['/editCake',cake.cCake]"><img src="http://localhost:8080/ShopCake/resources/images/iconEdit.png"/></a></td>
+				<td><a [routerLink]="['/deleteCake',cake.cCake]"><img src="http://localhost:8080/ShopCake/resources/images/removeicon.png"/></a></td>
+			</tr>
+	</table>

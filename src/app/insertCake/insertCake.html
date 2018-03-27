@@ -1,0 +1,46 @@
+<menu></menu>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+	<div  class="main">
+		<h2>Insert Cake</h2>
+		<form  [formGroup]="myForm" enctype="multipart/form-data" (ngSubmit)="insert(myForm.value)" >
+		<table style="width:50%">
+			<tr>
+			<th>
+			<label for="cCake">Code Cake</label>
+			</th>
+			<td>
+			<input type="text" id="cCake" name="cCake" formControlName="cCake" placeholder="Code Cake" required/><br/>
+			</td>
+			</tr>
+			<tr>
+			<th><label for="nCake">Name Cake</label></th>
+			<td><input type="text" id="nCake" name="nCake"
+						placeholder="Name Cake" formControlName="nCake" required />
+			<td>
+			</tr>
+			<tr>
+			<th><label for="cCake">Price</label></th>
+			<td><input type="text" id="price" name="price" formControlName="price" placeholder="Price Cake" required /></td>
+			</tr>
+			<tr>
+			<th>
+			<label for="file">Image</label></th>
+			<td><input type="file" name="file" id="file" (change)="fileChangeEvent($event)" required /></td>
+			</tr>
+			<tr>
+			<th><label for="detail">Detail</label></th>
+			<td><textarea cols="30" rows="5" name="detail" formControlName="detail" id="detail" placeholder="input Detail....." class="textarea" required></textarea>	</td>		
+			</tr>
+			<tr>
+			<td class="">
+			<input type="submit" value="Insert" class="button"/></td></tr>
+		</table>
+		</form>
+        <p>{{thongBao}}</p>
+	</div>
